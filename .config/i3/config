@@ -127,8 +127,8 @@ bar {
 
 # colour of border, background, text, indicator, and child_border
 client.focused #e46c6d #dbd9da #3b4d4f #b899a8 #819fc1
-client.focused_inactive #dbd9da #d8af60 #3b4d4f #dbd9da #dbd9da
-client.unfocused #dbd9da #d8af60 #3b4d4f #dbd9da #dbd9da
+client.focused_inactive #dbd9da #d8af60 #3b4d4f #dbd9da #c0d6ee
+client.unfocused #dbd9da #d8af60 #3b4d4f #dbd9da #c0d6ee
 client.urgent #dbd9da #d8af60 #3b4d4f #dbd9da #dbd9da
 client.placeholder #dbd9da #d8af60 #3b4d4f #dbd9da #dbd9da
 client.background #dbd9da
