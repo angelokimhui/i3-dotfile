@@ -105,6 +105,7 @@ bindsym $super+r mode "resize"
 # panel
 bar {
 	tray_output primary
+	tray_padding 4px
 	status_command i3status
 	position top
 	workspace_min_width 24
