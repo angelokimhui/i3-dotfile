@@ -145,8 +145,8 @@ for_window [class=Eog|Sxiv|feh|mpv|Vlc|File-roller|Xarchiver] floating enable
 for_window [class=Eog|Sxiv|feh|mpv|Vlc|File-roller|Xarchiver] focus
 for_window [class=".*"] border pixel 8
 # Make blueman windows floating by default
-for_window [class="^Blueman-.*$"] floating enable
+for_window [class="^Blueman-.*$"] floating enable, sticky enable, resize set 640 480, move absolute position center
 
 # hide_edge_borders smart
-gaps inner 12
+gaps inner 5
 smart_gaps on
