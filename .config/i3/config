@@ -23,7 +23,8 @@ bindsym $super+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -b \
 
 # common apps keybinds
 bindsym Print exec scrot 'Cheese_%a-%d%b%y_%H.%M.png' -e 'xdg-open ~/$f'
-bindsym $super+l exec --no-startup-id i3lock -i ~/.lock.png && systemctl suspend
+bindsym $super+l exec --no-startup-id i3lock -i ~/.lock.png
+bindsym $super+shift+l exec --no-startup-id i3lock -i ~/.lock.png && systemctl suspend
 bindsym $super+o exec firefox
 bindsym $super+p exec nautilus --new-window
 
@@ -88,7 +89,7 @@ bindsym $super+Shift+6 move container to workspace 6:VI
 bindsym $super+BackSpace exec "i3-msg restart"
 
 # exit i3
-bindsym $super+Shift+l exec "i3-nagbar -t warning -m 'Do you want to log-out?' \
+bindsym $super+Shift+e exec "i3-nagbar -t warning -m 'Do you want to log-out?' \
 -b 'Yes' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
