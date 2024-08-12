@@ -23,7 +23,7 @@ bindsym $super+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -b \
 
 # common apps keybinds
 bindsym Print exec scrot 'Cheese_%a-%d%b%y_%H.%M.png' -e 'xdg-open ~/$f'
-bindsym $super+l exec --no-startup-id i3lock -i ~/.lock.png
+bindsym $super+l exec --no-startup-id i3lock -i ~/.lock.png & sleep 10 && xset dpms force off
 bindsym $super+shift+l exec --no-startup-id i3lock -i ~/.lock.png && systemctl suspend
 bindsym $super+o exec firefox
 bindsym $super+p exec nautilus --new-window
