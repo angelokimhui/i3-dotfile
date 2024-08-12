@@ -14,12 +14,14 @@ exec --no-startup-id picom -b
 exec --no-startup-id hsetroot -cover ~/.wallpaper.png
 
 # start a terminal
-bindsym $super+Return exec --no-startup-id i3-sensible-terminal
+bindsym $super+Return exec --no-startup-id xfce4-terminal
+bindsym $super+shift+Return exec --no-startup-id xfce4-terminal -e 'bash -c "devspace"' -T "Devspace"
 
 # start dmenu (a program launcher)
-bindsym $super+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -b \
--fn 'Poppins:size=9' -nb '#f9faf4' -nf '#3b4d4f' \
--sb '#68c7c1' -sf '#3b4d4f'"
+# bindsym $super+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -b \
+# -fn 'Poppins:size=9' -nb '#f9faf4' -nf '#3b4d4f' \
+# -sb '#68c7c1' -sf '#3b4d4f'"
+bindsym $super+d exec --no-startup-id "dmenu_run -b -nb '#f9faf4' -nf '#3b4d4f' -sb '#68c7c1' -sf '#3b4d4f' -fn 'Poppins:size=9'
 
 # common apps keybinds
 bindsym Print exec --no-startup-id scrot 'Pictures/Screenshots/Screnshot_%a-%d%b%y_%H.%M.png' -e 'xdg-open ~/$f'
