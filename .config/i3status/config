@@ -2,7 +2,7 @@ general {
 	output_format = "i3bar"
 	colors = false
 	markup = pango
-	interval = 5
+	interval = 1
 }
 
 order += "load"
@@ -54,6 +54,6 @@ battery 0 {
 }
 
 time {
-	format = "<span background='#81a1c1'>    </span><span background='#dbd9da'>  %b %d at %H:%M  </span>"
+	format = "<span background='#81a1c1'>     </span><span background='#dbd9da'>  %b %d at %H:%M  </span>"
 }
 
