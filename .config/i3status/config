@@ -29,7 +29,7 @@ wireless wlo1 {
 
 ethernet enp3s0f3u1u1 {
 	format_up = "<span background='#68c7c1'>     </span><span background='#dbd9da'>  Wired  </span>"
-        format_down = "<span background='#68c7c1'>    </span><span background='#dbd9da'>  Disconnected  </span>"
+        format_down = "<span background='#68c7c1'>     </span><span background='#dbd9da'>  Disconnected  </span>"
 }
 
 volume master {
