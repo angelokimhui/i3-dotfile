@@ -1,0 +1,3 @@
+#!/bin/bash
+mkdir -p /home/$USER/devspace
+distrobox create --image ubuntu:24.04 --name devspace --home /home/$USER/devspace -a "--hostname '$(uname -n)'"

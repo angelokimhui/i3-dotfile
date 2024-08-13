@@ -1,0 +1,5 @@
+#!/bin/bash
+NID=0
+brightness=$(echo "scale=3; $(cat /sys/class/backlight/amdgpu_bl0/brightness) / 255 * 100" | bc | cut -d . -f 1)
+
+NID=$(notify-send -e -p -r $NID -t 3000 "Brightness $brightness%")
