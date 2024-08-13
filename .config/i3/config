@@ -32,7 +32,7 @@ bindsym $super+d exec --no-startup-id "dmenu_run -b -nb '#f9faf4' -nf '#3b4d4f' 
 # common apps keybinds
 bindsym Print exec --no-startup-id scrot 'Pictures/Screenshots/Screnshot_%a-%d%b%y_%H.%M.png' -e 'xdg-open ~/$f'
 bindsym $super+l exec --no-startup-id i3lock -i ~/.lock.png & sleep 10 && xset dpms force off
-bindsym $super+shift+l exec --no-startup-id i3lock -i ~/.lock.png && systemctl suspend
+bindsym $super+shift+l exec --no-startup-id i3lock -i ~/.lock.png && systemctl suspend-then-hibernate
 bindsym $super+shift+h exec --no-startup-id i3lock -i ~/.lock.png && xset dpms force off  && systemctl hibernate
 bindsym $super+o exec --no-startup-id firefox
 bindsym $super+p exec --no-startup-id nautilus --new-window
