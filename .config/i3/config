@@ -43,8 +43,8 @@ bindsym $super+p exec --no-startup-id nautilus --new-window
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 5%+
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 5%-
 bindsym XF86AudioMute exec --no-startup-id amixer set Master toggle
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set 5%+
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set 5%+ && brightness_notif
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%- && brightness_notif
 
 # kill focused window
 bindsym $super+shift+q kill
