@@ -34,6 +34,7 @@ bindsym Print exec --no-startup-id scrot 'Pictures/Screenshots/Screnshot_%a-%d%b
 bindsym $super+l exec --no-startup-id i3lock -i ~/.lock.png & sleep 10 && xset dpms force off
 bindsym $super+shift+l exec --no-startup-id i3lock -i ~/.lock.png && systemctl suspend-then-hibernate
 bindsym $super+shift+h exec --no-startup-id i3lock -i ~/.lock.png && xset dpms force off  && systemctl hibernate
+bindsym $super+shift+F12 exec --no-startup-id notify-send "PC is shutting down" "Your PC will shutdown in 5 seconds" & sleep 5 & shutdown now
 bindsym $super+o exec --no-startup-id firefox
 bindsym $super+p exec --no-startup-id nautilus --new-window
 
