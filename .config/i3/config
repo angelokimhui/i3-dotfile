@@ -154,6 +154,7 @@ for_window [class=".*"] border pixel 8
 for_window [class="^Blueman-.*$"] floating enable, sticky enable, resize set 640 480, move absolute position center
 for_window [class="Nm-connection-editor" instance="nm-connection-editor"] floating enable, sticky enable, resize set 640 480, move absolute position center
 for_window [class="pavucontrol" instance="pavucontrol" title="Volume Control"] floating enable, sticky enable, resize set 640 480, move absolute position center
+for_window [class="Pavumeter" instance="pavumeter" title="PulseAudio Volume Meter"] floating enable, sticky enable, resize set 640 480, move absolute position center
 for_window [instance="vlc" class="vlc"] floating enable, sticky enable resize set 1280 720, move absolute position center
 
 # hide_edge_borders smart
