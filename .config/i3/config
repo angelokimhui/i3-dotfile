@@ -9,6 +9,7 @@ font pango:feathericons 9, Poppins Regular 9
 floating_modifier $super
 
 # autostart
+exec_always --no-startup-id autotiling
 exec_always --no-startup-id for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 1); do xinput --set-prop $id 'libinput Accel Profile Enabled' 0, 1; done
 exec --no-startup-id xinput --set-prop "ELAN078E:00 04F3:30FD Touchpad" 'libinput Tapping Enabled' 1
 exec --no-startup-id pasystray
@@ -151,12 +152,12 @@ for_window [class=Eog|Sxiv|feh|mpv|Vlc|File-roller|Xarchiver] floating enable
 for_window [class=Eog|Sxiv|feh|mpv|Vlc|File-roller|Xarchiver] focus
 for_window [class=".*"] border pixel 8
 # Make specific windows to float by default
-for_window [class="^Blueman-.*$"] floating enable, sticky enable, resize set 640 480, move absolute position center
-for_window [class="Nm-connection-editor" instance="nm-connection-editor"] floating enable, sticky enable, resize set 640 480, move absolute position center
-for_window [class="pavucontrol" instance="pavucontrol" title="Volume Control"] floating enable, sticky enable, resize set 640 480, move absolute position center
-for_window [class="Pavumeter" instance="pavumeter" title="PulseAudio Volume Meter"] floating enable, sticky enable, resize set 640 480, move absolute position center
-for_window [class="Paman" instance="paman" title="PulseAudio Manager"] floating enable, sticky enable, resize set 640 480, move absolute position center
-for_window [instance="vlc" class="vlc"] floating enable, sticky enable resize set 1280 720, move absolute position center
+for_window [class="^Blueman-.*$"] floating enable, resize set 640 480, move absolute position center
+for_window [class="Nm-connection-editor" instance="nm-connection-editor"] floating enable, resize set 640 480, move absolute position center
+for_window [class="pavucontrol" instance="pavucontrol" title="Volume Control"] floating enable, resize set 640 480, move absolute position center
+for_window [class="Pavumeter" instance="pavumeter" title="PulseAudio Volume Meter"] floating enable, resize set 640 480, move absolute position center
+for_window [class="Paman" instance="paman" title="PulseAudio Manager"] floating enable, resize set 640 480, move absolute position center
+for_window [instance="vlc" class="vlc"] floating enable,resize set 1280 720, move absolute position center
 
 # hide_edge_borders smart
 gaps inner 5
