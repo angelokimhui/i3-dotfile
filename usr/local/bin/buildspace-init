@@ -1,0 +1,3 @@
+#!/bin/bash
+mkdir -p /home/$USER/tmp
+distrobox create --image fedora:40 --name buildspace --home /home/$USER/tmp -a "--hostname '$(uname -n)'"
