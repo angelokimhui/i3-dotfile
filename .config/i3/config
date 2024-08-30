@@ -84,20 +84,20 @@ bindsym $super+Shift+space focus mode_toggle
 # switch to workspace
 bindsym $super+Control+Right workspace next
 bindsym $super+Control+Left workspace prev
-bindsym $super+1 workspace 1:I
-bindsym $super+2 workspace 2:II
-bindsym $super+3 workspace 3:III
-bindsym $super+4 workspace 4:IV
-bindsym $super+5 workspace 5:V
-bindsym $super+6 workspace 6:VI
+bindsym $super+1 workspace 1:One
+bindsym $super+2 workspace 2:Two
+bindsym $super+3 workspace 3:Three
+bindsym $super+4 workspace 4:Four
+bindsym $super+5 workspace 5:Five
+bindsym $super+6 workspace 6:Six
 
 # move focused container to workspace
-bindsym $super+Shift+1 move container to workspace 1:I
-bindsym $super+Shift+2 move container to workspace 2:II
-bindsym $super+Shift+3 move container to workspace 3:III
-bindsym $super+Shift+4 move container to workspace 4:IV
-bindsym $super+Shift+5 move container to workspace 5:V
-bindsym $super+Shift+6 move container to workspace 6:VI
+bindsym $super+Shift+1 move container to workspace 1:One
+bindsym $super+Shift+2 move container to workspace 2:Two
+bindsym $super+Shift+3 move container to workspace 3:Three
+bindsym $super+Shift+4 move container to workspace 4:Four
+bindsym $super+Shift+5 move container to workspace 5:Five
+bindsym $super+Shift+6 move container to workspace 6:Six
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $super+BackSpace exec "i3-msg restart"
